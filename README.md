@@ -30,6 +30,11 @@ Raw data can be downloaded at **link** and should be placed in
 ### Data download and paths setting
 
 1. Download your raw, demultiplexed, fastq data into 'data/02_sample_demultiplexing' (see [Sample demultiplexing](#sample-demultiplexing) on how to demultiplex your samples)
+2. Create a CSV file containing the sample name / tag correspondance following `data/00_metadata/sample_tags.csv`
+3. **Reference database in the dada2 format**
+4. Update paths in the `_targets.R` file:
+    - `taxo_db_path` :
+    - `run_values` : 
 
 ### Checking and running the pipeline 
 

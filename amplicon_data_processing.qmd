@@ -1,5 +1,5 @@
 ---
-title: "Sequencing data processing for the SynCom co-culture experiment"
+title: "Sequencing data processing using the dada2 pipeline"
 author: "Marine C. Cambon"
 date: last-modified
 published-title: "document last compilation"
@@ -59,7 +59,7 @@ tar_visnetwork(targets_only = TRUE)
 
 ## Read demultiplexing
 
-The run contains multiplexed samples and only one primer pair. The full sequences of primers + spacer + tag are in `data/tag_primers_16SV4_fwd.fasta` and `data/tag_primers_16SV4_rev.fasta`.
+The run contains multiplexed samples and only one primer pair. The full sequences of primers + spacer + tag are in `data/02_sample_demultiplexing/tag_primers_16SV4_fwd.fasta` and `data/02_sample_demultiplexing/tag_primers_16SV4_rev.fasta`.
 
 The raw data were downloaded from Novogene on BlueBEAR at `~/cambonm-oak-syncoms/250730_SynCom_stability_experiment/01_raw_data`
 
