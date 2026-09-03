@@ -15,4 +15,6 @@ renv/python/
 renv/sandbox/
 renv/staging/
 data/01_raw_data/*
-
+_targets/
+!_targets.R
+!_targets/user/
