@@ -118,4 +118,4 @@ targets <- tar_map(
   #tar_quarto(report, "SynCom_stability_data_processing.qmd") 
 )
 
-list(targets, tar_quarto(report, "SynCom_stability_data_processing.qmd"))
+list(targets, tar_quarto(report, "amplicon_data_processing.qmd"))
