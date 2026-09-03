@@ -20,11 +20,20 @@ Raw data can be downloaded at **link** and should be placed in
 
 ## How to run the pipeline
 
+### Environment set up
+1. `git clone git@github.com:marccamb/dada2_targets.git .` to clone the repository on your machine
 1. `install.packages("renv")` to install {renv} from CRAN
-2. `renv::restore()` use this command to install all packages and dependancies for the pipeline
+2. `renv::activate()` to activate the {renv} environment  
+2. `renv::restore()` to install all packages and dependancies for the pipeline
 1.  `library(targets)` to load the {targets} package
-2.  `tar_manifest()` and `tar_visnetwork()` to check the pipeline for
-    correctness.
+
+### Data download and paths setting
+
+1. Download your raw, demultiplexed, fastq data into 'data/02_sample_demultiplexing' (see [Sample demultiplexing](#sample-demultiplexing) on how to demultiplex your samples)
+
+### Checking and running the pipeline 
+
+2.  `tar_manifest()` and `tar_visnetwork()` to check the pipeline for correctness.
 3.  `tar_make()` similar to run the pipeline.
 4.  `tar_read()` to read target output.
 
@@ -40,3 +49,8 @@ Raw data can be downloaded at **link** and should be placed in
     pipeline.
 -   `data/0[23]*` contain outputs of the pipeline
 
+## Sample demultiplexing
+
+The demultiplexing of samples is not part of the pipeline but the steps are as follows:
+
+1. Download and decompress your raw multiplexed fastq files in `data/01_raw_data`
