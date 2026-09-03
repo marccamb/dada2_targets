@@ -9,7 +9,7 @@ track_read_loss <- function(counts_filts, dada_F, mergers, seqtab_filt, seqtab_f
     colSums(seqtab_filt_nochim),
     colSums(seqtab_filt_nochim_abund)
   )
-  colnames(track) <- c("demultiplexed", "qual_fitered", "denoisedF", "merged", "length_filtered", "nonchim", "ASV_>_1000_reads")
+  colnames(track) <- c("demultiplexed", "qual_fitered", "denoisedF", "merged", "length_filtered", "nonchim", "no_low_abund_ASV")
   rownames(track) <- names(mergers)
   return(track)
 }
