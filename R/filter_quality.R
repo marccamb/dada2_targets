@@ -1,5 +1,5 @@
 get_file_paths <- function(path, metadata) {
-  fnFs <- (list.files(path, pattern=".R1.fastq", full.names = TRUE))
+  fnFs <- sort(list.files(path, pattern=".R1.fastq", full.names = TRUE))
   fnRs <- sort(list.files(path, pattern=".R2.fastq", full.names = TRUE))
   sample.names <- metadata$sample_ID[match(basename(fnFs), basename(metadata$file))]
   fnFs <- fnFs[!is.na(sample.names)]
