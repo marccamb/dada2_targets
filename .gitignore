@@ -18,3 +18,4 @@ data/01_raw_data/*
 _targets/
 !_targets.R
 !_targets/user/
+snowflake.log
