@@ -3,7 +3,7 @@
 
 This [{targets}](https://books.ropensci.org/targets/) reproducible
 pipeline contains amplicon sequencing data processing using
-[{dada2}](https://benjjneb.github.io/dada2/). It also generates a Quarto report detailing the
+[{dada2}](https://benjjneb.github.io/dada2/) v1.36.0. It also generates a Quarto report detailing the
 steps of the pipeline.
 
 ## Package versions
